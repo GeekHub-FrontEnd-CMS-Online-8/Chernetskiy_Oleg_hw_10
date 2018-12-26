@@ -1,0 +1,212 @@
+ul li
+  display: inline
+  list-style-type: none
+
+#menu a
+  text-decoration: none
+  color: #ffffff
+  font-size: 18px
+  font-weight: 400
+
+.nav__item1 a
+  padding: 40px 20px 10px
+  border-radius: 5px
+
+.nav__item2 a
+  padding: 40px 10px 10px
+  border-radius: 5px
+
+.nav__item3 a
+  padding: 40px 20px 10px
+  border-radius: 5px
+
+.nav__item4 a
+  padding: 40px 20px 10px
+  border-radius: 5px
+
+.nav__item5 a
+  padding: 40px 10px 10px
+  border-radius: 5px
+
+.active_1 a:hover
+    padding: 40px 20px 10px
+    background-color: #74c7d5
+    border-radius: 5px
+
+.active_2 a:hover
+  padding: 40px 10px 10px
+  background-color: #df5c64
+  border-radius: 5px
+
+.active_3 a:hover
+  padding: 40px 20px 10px
+  background-color: #91778e
+  border-radius: 5px
+
+.active_4 a:hover
+  padding: 40px 20px 10px
+  background-color: #a1ca6c
+  border-radius: 5px
+
+.active_5 a:hover
+  padding: 40px 10px 10px
+  background-color: #82c8bd
+  border-radius: 5px
+
+.page_1 a
+  background-color: #74c7d5
+
+.page_2 a
+  background-color: #df5c64
+
+.page_3 a
+  background-color: #91778e
+
+.page_4 a
+  background-color: #a1ca6c
+
+.page_5 a
+  background-color: #82c8bd
+
+.header_top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 1098px
+  margin: -5px auto 0
+  padding: 35px 20px 0
+
+
+@media screen and (min-width: 769px)
+  .header_input
+    display: none
+
+@media screen and (max-width: 768px)
+  .nav__item1 a
+    padding: 0
+    border-radius: 5px
+
+  .nav__item2 a
+    padding: 0
+    border-radius: 5px
+
+  .nav__item3 a
+    padding: 0
+    border-radius: 5px
+
+  .nav__item4 a
+    padding: 0
+    border-radius: 5px
+
+  .nav__item5 a
+    padding: 0
+    border-radius: 5px
+
+  .active_1 a:hover
+    padding: 0
+    background-color: #74c7d5
+    border-radius: 5px
+
+  .active_2 a:hover
+    padding: 0
+    background-color: #df5c64
+    border-radius: 5px
+
+  .active_3 a:hover
+    padding: 0
+    background-color: #91778e
+    border-radius: 5px
+
+  .active_4 a:hover
+    padding: 0
+    background-color: #a1ca6c
+    border-radius: 5px
+
+  .active_5 a:hover
+    padding: 0
+    background-color: #82c8bd
+    border-radius: 5px
+
+  #menuToggle
+    display: block
+    position: relative
+    z-index: 1
+    -webkit-user-select: none
+    user-select: none
+
+  #menuToggle input
+    display: block
+    width: 40px
+    height: 32px
+    position: absolute
+    top: -7px
+    left: -5px
+    cursor: pointer
+    opacity: 0
+    z-index: 2
+    -webkit-touch-callout: none
+
+  #menuToggle span
+    display: block
+    width: 33px
+    height: 4px
+    margin-bottom: 5px
+    position: relative
+    background: #cdcdcd
+    border-radius: 3px
+    z-index: 1
+    transform-origin: 4px 0px
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+
+  #menuToggle span:first-child
+    transform-origin: 0% 0%
+
+  #menuToggle span:nth-last-child(2)
+    transform-origin: 0% 100%
+
+  #menuToggle input:checked ~ span
+    opacity: 1
+    transform: rotate(45deg) translate(-2px, -1px)
+    background: #ffffff
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+    opacity: 0
+    transform: rotate(0deg) scale(0.2, 0.2)
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+    transform: rotate(-45deg) translate(0, -1px)
+
+  #menu
+    position: absolute
+    width: 200px
+    margin: -100px 0 0 -148px
+    padding: 50px
+    padding-top: 125px
+    background: #1f1c39
+    list-style-type: none
+    -webkit-font-smoothing: antialiased
+    transform-origin: 0% 0%
+    transform: translate(-400%, 0)
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+    text-align: right
+
+  #menu li
+    padding: 10px 0
+    font-size: 45px
+
+  #menuToggle input:checked ~ ul
+    transform: none
+
+@media screen and (max-width: 425px)
+  #menu
+    margin: -100px 0 0 -148px
+    transform: translate(-400%, 0)
+
+@media screen and (max-width: 375px)
+  #menu
+    margin: -100px 0 0 -148px
+    transform: translate(-400%, 0)
+
+@media screen and (max-width: 320px)
+  #menu
+    width: 200px

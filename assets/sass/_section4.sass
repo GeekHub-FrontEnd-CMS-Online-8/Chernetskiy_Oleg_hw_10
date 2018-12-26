@@ -1,0 +1,124 @@
+.sec_4
+  background: #665464 url(../img/cover4.png) 50% 50% no-repeat
+  background-size: cover
+  min-width: 100%
+  font-family: 'Lato', sans-serif
+  color: #ffffff
+
+.sec4_main_text
+  padding-bottom: 58px
+
+.sec4_text
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 1100px
+  margin: 0 auto
+  border-top: 1px solid #94b963 /* Линия сверху текста */
+  border-bottom: 1px solid #94b963 /* Линия снизу текста */
+  padding: 32px 0
+
+.sec4_text_left
+  font-size: 20px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 0 20px
+
+.sec4_text_right
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  width: 463px
+
+.sec4_link a
+  font-size: 16px
+  font-weight: 700
+  text-decoration: none
+  color: #ffffff
+  padding: 5px 10px
+  border-radius: 5px
+
+  &:hover
+    background-color: #f5c149
+
+.sec4_gallery
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  max-width: 1200px
+  margin: 0 auto
+  padding: 37px 0 97px
+
+.sec4__gallery__item
+  padding: 10px
+
+.sec4__gallery__photo
+  position: relative
+  width: 260px
+  height: 200px
+
+.sec4__gallery__photo img
+  display: block
+  width: 100%
+  height: auto
+
+.sec4__gallery__link
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 0
+  left: 0
+  position: absolute
+  width: 260px
+  height: 200px
+  background-color: #3d4d29
+  opacity: 0
+
+.sec4__gallery__link a
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  color: #ffffff
+  font-size: 48px
+  font-weight: 300
+  height: 50px
+  width: 50px
+  border: 1px solid #ffffff
+  border-radius: 30px
+
+.sec4__gallery__link:hover
+  opacity: 0.7
+
+.arrow_box2
+  position: relative
+  background: #ffffff
+  height: 50px
+  border-radius: 0 0 5px 5px
+
+.arrow_box2:after
+  bottom: 100%
+  left: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+  border-bottom-color: #ffffff
+  border-width: 18px
+  margin-left: -18px
+
+.arrow_box2 p
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+  color: #727272
+  text-align: center
+  padding: 18px 0
+
+@media screen and (max-width: 320px)
+  .sec4_text_right
+    width: 150px
